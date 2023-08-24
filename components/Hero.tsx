@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className='text-gradient text-8xl font-bold mb-10'>
           10x your leads, <br /> <span className="">meetings and deals.</span>
         </h1>
-        <p className='text-white text-xl font-light mb-20'>
+        <p className='text-white text-xl font-light mb-40'>
           Instantly scales your outreach campaigns with unlimited email sending <br /> accounts & warmup, b2b lead database and smart AI
         </p>
       </div>
