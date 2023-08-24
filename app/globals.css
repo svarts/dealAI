@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  background: black;
+  background: radial-gradient(circle at top, #000000 85%, #ffffff 15%);
   font-family: 'Questrial', sans-serif;
 }
 /* START: General styles */
