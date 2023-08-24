@@ -5,7 +5,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 
 const HeroParallax = () => {
     return (
-        <div className="">
+        <div className="mb-28">
             <ParallaxProvider>
                 <Parallax speed={-20}>
                     <div className='relative flex justify-center items-center'>

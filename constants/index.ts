@@ -24,7 +24,7 @@ export const navLinks = [
         title: "Blog",
     },
 ];
-export const feedback = [
+/* export const feedback = [
     {
         id: "feedback-1",
         content:
@@ -49,4 +49,4 @@ export const feedback = [
         title: "Founder & Leader",
         img: person03,
     },
-];
+]; */
