@@ -10,8 +10,8 @@ const Navbar = () => {
         <nav className='w-full flex py-6 justify-between items-center bg-transparent'>
             <img src="./logo.svg" alt='meetingmaximizer-ai'
                 className='w-[70px] ml-10 cursor-pointer' />
-            <h1 className={`font-poppins font-normal cursor-pointer text-[16px] text-cyan-500`}>Deal<span className='text-white'>AI</span></h1>
-            <ul className='list-none sm:flex hidden justify-center items-center flex-1 mr-40'>
+            <h1 className={`font-poppins font-normal cursor-pointer text-[16px] text-white`}>eal<span className='text-cyan-500'>AI</span></h1>
+            <ul className='list-none sm:flex hidden justify-center items-center flex-1'>
                 {navLinks.map((nav, index) => (
                     <li key={nav.id} 
                         className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white hover:text-secondary`}>
