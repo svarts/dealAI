@@ -7,7 +7,7 @@ import CustomButton from './CustomButton'
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
-        <nav className='w-full flex py-6 justify-between items-center nav'>
+        <nav className='w-full flex py-6 justify-between items-center bg-transparent'>
             <img src="./logo.svg" alt='meetingmaximizer-ai'
                 className='w-[70px] ml-10 cursor-pointer' />
             <h1 className={`font-poppins font-normal cursor-pointer text-[16px] text-cyan-500`}>Deal<span className='text-white'>AI</span></h1>
@@ -30,7 +30,6 @@ const Navbar = () => {
                     className='w-[25px] h-[25px] object-contain'
                     onClick={() => setToggle((prev) => !prev)}
                 />
-
                 <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-tr from-lightPrimary to-purplePrimary ... absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
                     <ul className='list-none flex flex-col justify-end items-center flex-1'>
                         {navLinks.map((nav, index) => (

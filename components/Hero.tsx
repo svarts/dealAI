@@ -1,39 +1,31 @@
 "use client"
-import Image from "next/image"
-import { Parallax, ParallaxProvider } from "react-scroll-parallax"
-import CustomButton from './CustomButton'
 
 const Hero = () => {
   const handleScroll = () => { }
   return (
-    <div className=''>
-      <div className='flex-1 pt-36 pl-20'>
-        <h1 className='text-white text-8xl font-bold'>
-          10x your leads, meetings and deals.
+    <div className='flex justify-center items-center text-center'>
+      <div className='flex-1 pt-36 pl-20 text-center'>
+        <h1 className='text-gradient text-8xl font-bold mb-10'>
+          10x your leads, <br /> <span className="">meetings and deals.</span>
         </h1>
-
-        <p className='text-white text-2xl'>
-          Instantly scales your outreach campaigns with unlimited email sending accounts & warmup, b2b lead database and smart AI
+        <p className='text-white text-xl font-light mb-20'>
+          Instantly scales your outreach campaigns with unlimited email sending <br /> accounts & warmup, b2b lead database and smart AI
         </p>
-
-        <CustomButton
-          title="Explore"
-          containerStyles="text-white text-lg font-black bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-2xl text-sm px-5 py-2.5 text-center mr-2 mb-10 mt-10"
-          handleClick={handleScroll}
-        />
       </div>
-      <ParallaxProvider>
+      {/* <ParallaxProvider>
         <Parallax speed={-20}>
-          <div className='hero__image-container'>
+          <div className='relative'>
+            <div className='gradient absolute inset-0 z-0'></div>
             <Image
               src="./hero.svg"
               width={600}
               height={600}
               alt="dealai"
+              className="relative z-10"
             />
           </div>
         </Parallax>
-      </ParallaxProvider>
+      </ParallaxProvider> */}
     </div>
   )
 }

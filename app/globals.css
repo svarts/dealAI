@@ -64,5 +64,44 @@ body {
 .text-shadow:hover{
   text-shadow: #fff1b8 1px 0 10px;
 }
+.text-gradient{
+  background: -webkit-linear-gradient(#00eeff, #5d58ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pink-gradient {
+  background: linear-gradient(190deg, #00eeff 0%, #5d58ff 100%);
+  filter: blur(1000px);
+  background-size: 10% 10%;
+}
+.white-gradient {
+  background: rgba(85, 85, 85, 0.4);
+  filter: blur(900px);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --size: 600px;
+  --speed: 20s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsla(184, 100%, 50%, 0.725), hsla(264, 82%, 57%, 0.635));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: absolute;
+  z-index: -1;
+  left: 23rem;
+}
 
 
