@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import HeroParallax from './HeroParallax';
 import FeedbackCards from './FeedbackCards';
+import UserRatings from './UserRatings';
 
 export{
     Hero,
@@ -11,5 +12,6 @@ export{
     Navbar,
     Footer, 
     HeroParallax,
-    FeedbackCards
+    FeedbackCards,
+    UserRatings
 }

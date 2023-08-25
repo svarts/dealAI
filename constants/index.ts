@@ -24,13 +24,6 @@ export const navLinks = [
         title: "Blog",
     },
 ];
-const imagePaths = {
-    person01: '/front-task/public/person01.avif',
-    person02: '/front-task/public/person02.avif',
-    person03: '/front-task/public/person03.avif',
-    person04: '/front-task/public/person04.avif',
-    person05: '/front-task/public/person05.avif'
-};
 export const feedback = [
     {
         id: "feedback-1",

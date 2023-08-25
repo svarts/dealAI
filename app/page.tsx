@@ -1,4 +1,4 @@
-import { FeedbackCards, Hero, HeroParallax } from "@/components"
+import { FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
 import { feedback } from "@/constants"
 
 
@@ -14,6 +14,9 @@ export default function Home() {
           {feedback.map((item) => (
             <FeedbackCards key={item.id} feedback={item} />
           ))}
+        </div>
+        <div>
+          <UserRatings />
         </div>
       </div>
     </main>

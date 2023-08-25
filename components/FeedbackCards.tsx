@@ -18,6 +18,7 @@ const FeedbackCards = ({ feedback }: FeedbackCardProps) => {
                     <p className="font-poppins font-normal text-[16px] leading-[24px] text-white">{title}</p>
                 </div>
             </div>
+            
         </div>
     )
 }
