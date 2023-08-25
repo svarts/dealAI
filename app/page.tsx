@@ -1,4 +1,5 @@
 import { FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
+import UnlimitedAccounts from "@/components/UnlimitedAccounts"
 import { feedback } from "@/constants"
 
 
@@ -17,6 +18,7 @@ export default function Home() {
         </div>
         <div>
           <UserRatings />
+          <UnlimitedAccounts />
         </div>
       </div>
     </main>

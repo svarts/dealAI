@@ -39,19 +39,15 @@ body {
 .hero {
   @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
 }
-
 .hero__title {
   @apply 2xl:text-[72px] text-white sm:text-[64px] text-[50px] font-extrabold;
 }
-
 .hero__subtitle {
   @apply text-[27px] text-white font-light mt-5;
 }
-
 .hero__image-container {
   @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
 }
-
 .hero__image {
   @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
 }
@@ -72,21 +68,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.pink-gradient {
-  background: linear-gradient(190deg, #00eeff 0%, #5d58ff 100%);
-  filter: blur(1000px);
-  background-size: 10% 10%;
-}
-.white-gradient {
-  background: rgba(85, 85, 85, 0.4);
-  filter: blur(900px);
-}
 .feedback-slider {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
-
 .feedback-card {
   scroll-snap-align: start;
   flex-shrink: 0;
