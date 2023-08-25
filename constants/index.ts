@@ -66,3 +66,31 @@ export const feedback = [
         img: "./person05.jpeg",
     },
 ];
+export const footerLinks = [
+    {
+        title: "Quick links",
+        links: [
+            { title: "Warmup", url: "/" },
+            { title: "Pricing", url: "/" },
+            { title: "About", url: "/" },
+            { title: "Reviews", url: "/" },
+        ],
+    },
+    {
+        title: "Support",
+        links: [
+            { title: "Help Desk", url: "/" },
+            { title: "Roadmap", url: "/" },
+            { title: "Facebook Group", url: "/" },
+        ],
+    },
+    {
+        title: "Company",
+        links: [
+            { title: "Terms", url: "/" },
+            { title: "Privacy", url: "/" },
+            { title: "Don't Sell My Info", url: "/" },
+            { title: "Privacy Center", url: "/" },
+        ],
+    },
+];
