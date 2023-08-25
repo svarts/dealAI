@@ -7,7 +7,6 @@
 
 body {
   background: black;
-  /* background: radial-gradient(circle at top, #000000 85%, #393939 15%); */
   font-family: 'Questrial', sans-serif;
 }
 /* START: General styles */
@@ -77,13 +76,14 @@ body {
   scroll-snap-align: start;
   flex-shrink: 0;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.unlimited-card:hover{
+  box-shadow: #d8d8d84d 0px 7px 30px 0px;
+  border-radius: 2.5rem;
+  transition: box-shadow 1s ease, border-radius 2s ease;
+}
+.unlimited-card:not(:hover) {
+  transition: box-shadow 2s ease, border-radius 2s ease;
+  box-shadow: initial;
 }
 .gradient {
   --size: 600px;
@@ -101,6 +101,14 @@ body {
   position: absolute;
   z-index: -1;
   left: 23rem;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
