@@ -23,7 +23,10 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <div className="sm:hidden flex flex-1 justify-end items-center">
+            <div className='mr-10 text-white text-shadow text-xl'>
+                <a href="">Log in</a>
+            </div>
+            <div className="sm:hidden flex flex-1 justify-end items-center mr-2">
                 <img 
                     src={toggle ? './close.svg' : './menu.svg'}
                     alt='menu'
@@ -31,7 +34,7 @@ const Navbar = () => {
                     onClick={() => setToggle((prev) => !prev)}
                 />
                 <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gradient-to-tr from-lightPrimary to-purplePrimary ... absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-                    <ul className='list-none flex flex-col justify-end items-center flex-1'>
+                    <ul className='list-none flex flex-col justify-end items-center flex-1 bg'>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
                                 <a href={`#${nav.id}`}>
@@ -39,16 +42,16 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
+                        <CustomButton
+                            title="Get Started"
+                            containerStyles="uppercase text-white text-lg bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 rounded-3xl text-center"
+                        />
                     </ul>
                 </div>
             </div>
-            <div className='mr-10 text-white text-shadow text-xl'>
-                <a href="">Log in</a>
-            </div>
-            <CustomButton
-            title="Get Started"
-            containerStyles="uppercase font-extrabold text-black text-lg bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-3xl text-sm text-center mr-10"
-            />
+            <button className="hidden sm:block w-[128px] h-[60px] font-extrabold uppercase text-black bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 rounded-3xl text-center mr-10">
+                Get Started
+            </button>
         </nav>
         
     )
