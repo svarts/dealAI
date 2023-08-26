@@ -125,7 +125,8 @@ body {
   box-shadow: initial;
 }
 .accordioncards {
-  border: 0.01px solid #ffffff6f;
+  border: 0.01px solid #5e5e5e6f !important;
+  background-color: rgb(12, 12, 12) !important;
 }
 .user-ratings-container {
   display: flex;
