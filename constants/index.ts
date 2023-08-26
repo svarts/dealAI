@@ -66,6 +66,31 @@ export const feedback = [
         img: "./person05.jpeg",
     },
 ];
+export const userRatings = [
+    {
+        id: "rating01",
+        img: "./userrating.svg",
+        title: "Instantly User Ratings"
+    },
+    {
+        id: "rating02",
+        img: "./userrating.svg",
+        title: "Ease of Use",
+        content: "Email Marketing Average: 8.7"
+    },
+    {
+        id: "rating03",
+        img: "./userrating.svg",
+        title: "Quality of support",
+        content: "Email Marketing Average: 8.5"
+    },
+    {
+        id: "rating1",
+        img: "./userrating.svg",
+        title: "Ease of setup",
+        content: "Email Marketing Average: 8.4"
+    },
+]
 export const footerLinks = [
     {
         title: "Quick links",

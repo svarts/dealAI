@@ -9,9 +9,16 @@ export interface CustomButtonProps {
 }
 
 export interface FeedbackProps {
-    id: string,
-    img: string,
+    id:string,
+    img:string,
     content:string,
     name:string,
     title:string,
+}
+
+export interface UserProps {
+    id:string,
+    img:string,
+    title:string,
+    content:string
 }

@@ -122,6 +122,11 @@ body {
   transition: box-shadow 2s ease, border-radius 2s ease;
   box-shadow: initial;
 }
+.user-ratings-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
 .gradient {
   --size: 600px;
   --speed: 20s;

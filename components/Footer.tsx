@@ -3,7 +3,7 @@ import Link from "next/link";
 import { footerLinks } from "@/constants";
 
 const Footer = () => {
-  return (
+    return (
     <footer className='flex flex-col text-gray-100 mt-5 border-t border-gray-200'>
         <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
             <div className='flex flex-col justify-start items-start gap-6'>
@@ -22,7 +22,7 @@ const Footer = () => {
                                 <Link
                                     key={link.title}
                                     href={link.url}
-                                    className="text-gray-400"
+                                    className="text-gray-400 text-shadow"
                                 >
                                     {link.title}
                                 </Link>

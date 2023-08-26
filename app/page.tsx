@@ -1,6 +1,6 @@
 import { FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
-import { feedback } from "@/constants"
+import { feedback, userRatings } from "@/constants"
 
 
 export default function Home() {
