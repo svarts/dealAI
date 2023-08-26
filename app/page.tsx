@@ -1,4 +1,5 @@
 import { FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
+import AccordionCards from "@/components/AccordionCards"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
 import { feedback, userRatings } from "@/constants"
 
@@ -19,6 +20,9 @@ export default function Home() {
         <div>
           <UserRatings />
           <UnlimitedAccounts />
+        </div>
+        <div>
+          <AccordionCards />
         </div>
       </div>
     </main>

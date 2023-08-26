@@ -127,6 +127,15 @@ body {
   justify-content: center;
   gap: 4rem;
 }
+.unlimited-accounts-container {
+  background: transparent;
+  box-shadow: rgba(135, 135, 255, 0.25) 0px 30px 60px -12px inset, rgba(50, 25, 98, 0.3) 0px 18px 36px -18px inset;
+  border: 0.6px solid #5d58ff;
+}
+.unlimited-accounts-container:hover {
+  box-shadow: rgba(128, 128, 255, 0.52) 0px 30px 60px -12px inset, rgba(62, 43, 97, 0.6)0px 18px 36px -18px inset;
+  border: 0.6px solid #5e58ff7d;
+}
 .gradient {
   --size: 600px;
   --speed: 20s;

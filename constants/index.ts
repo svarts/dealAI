@@ -85,12 +85,32 @@ export const userRatings = [
         content: "Email Marketing Average: 8.5"
     },
     {
-        id: "rating1",
+        id: "rating04",
         img: "./userrating.svg",
         title: "Ease of setup",
         content: "Email Marketing Average: 8.4"
     },
 ]
+export const accordionCards = [
+    {
+        id: "card01",
+        title: "Protect Your Deliverability with Email Validation and Bulk Domain Testing",
+        content: "Clean & verify your lead lists and ensure your domains are correctly set up for cold emailing. Our one-click bulk domain tester lets you know if your domain is missing important records.",
+        img: "./",
+    },
+    {
+        id: "card02",
+        title: "Automate & Personalize Emails with Campaign Builder & Integrations",
+        content: "Our Campaign Builder lets you use variables, sequences and smart scheduling to maximise your deliverability and response rates. Use our Zapier integration and webhooks for advanced automations.",
+        img: "./",
+    },
+    {
+        id: "card03",
+        title: "Save Time with Inbox Rotation",
+        content: "Instead of having separate campaigns for each of your sending accounts you can add all your sending accounts to one campaign. Instantly will then rotate sending emails between these accounts to make it more natural.",
+        img: "./",
+    },
+];
 export const footerLinks = [
     {
         title: "Quick links",
