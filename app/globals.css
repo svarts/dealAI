@@ -119,6 +119,7 @@ body {
   transition: box-shadow 1s ease, border-radius 2s ease;
 }
 .unlimited-card:not(:hover) {
+  border-radius: 1rem;
   transition: box-shadow 2s ease, border-radius 2s ease;
   box-shadow: initial;
 }
