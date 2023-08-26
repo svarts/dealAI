@@ -22,3 +22,10 @@ export interface UserProps {
     title:string,
     content:string
 }
+
+export interface AccordionProps {
+    id:string,
+    img:string,
+    title:string,
+    content:string
+}

@@ -1,7 +1,7 @@
 import { FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
 import AccordionCards from "@/components/AccordionCards"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
-import { feedback, userRatings } from "@/constants"
+import { feedback, userRatings, accordionCards } from "@/constants"
 
 
 export default function Home() {
@@ -22,7 +22,9 @@ export default function Home() {
           <UnlimitedAccounts />
         </div>
         <div>
-          <AccordionCards />
+        {accordionCards.map((item) => (
+            <AccordionCards key={item.id} accordionCards={item} />
+          ))}
         </div>
       </div>
     </main>
