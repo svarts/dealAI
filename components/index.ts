@@ -5,6 +5,8 @@ import Footer from "./Footer";
 import HeroParallax from './HeroParallax';
 import FeedbackCards from './FeedbackCards';
 import UserRatings from './UserRatings';
+import AccordionCard from './AccordionCards';
+import CampaignAnalytics from './CampaignAnalytics';
 
 export{
     Hero,
@@ -13,5 +15,7 @@ export{
     Footer, 
     HeroParallax,
     FeedbackCards,
-    UserRatings
+    UserRatings,
+    AccordionCard,
+    CampaignAnalytics
 }

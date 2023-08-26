@@ -124,6 +124,9 @@ body {
   transition: box-shadow 2s ease, border-radius 2s ease;
   box-shadow: initial;
 }
+.accordioncards {
+  border: 0.01px solid #ffffff6f;
+}
 .user-ratings-container {
   display: flex;
   justify-content: center;
