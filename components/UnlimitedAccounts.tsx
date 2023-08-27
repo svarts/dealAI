@@ -18,11 +18,11 @@ const UnlimitedAccounts = () => {
                     />
                 </div>
                 <div className="flex-1 pt-10 md:pt-36 text-center md:text-center md:items-start">
-                    <h1 className="text-gradient text-6xl md:text-8xl font-bold mb-10">
+                    <h1 className="text-gradient text-5xl md:text-8xl font-bold mb-10">
                         Reach Your Prospects Inbox <br /> with Unlimited Warmup
                     </h1>
-                    <p className="text-white text-base md:text-xl font-light">
-                        Instantly has the biggest warmup pool on the market: 200K+ real human accounts. <br />
+                    <p className="text-white text-base md:text-2xl font-light ">
+                        DealAI has the biggest warmup pool on the market: 200K+ real human accounts. <br />
                         Our completely automated warm up tool keeps your emails out of <br /> spam & improves your sending reputation by positively interacting with your emails. <br />
                         Enable it with 1 simple click and never worry about being stuck in spam again.
                     </p>
