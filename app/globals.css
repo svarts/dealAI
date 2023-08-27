@@ -203,7 +203,7 @@ body {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   position: absolute;
   z-index: -1;
-  left: 23rem;
+  left: 30%;
 }
 @keyframes rotate {
   0% {
@@ -211,6 +211,15 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .mobile-small {
+    font-size: 18px !important; 
+  }
+
+  .mobile-large {
+    font-size: 24px !important; 
   }
 }
 

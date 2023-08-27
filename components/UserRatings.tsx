@@ -9,17 +9,27 @@ interface UserRatingProps {
 const UserRatings = ({ userratings }: UserRatingProps) => {
     const { img, title, content } = userratings;
     return (
-        <div className="">
-            <Image 
-                src={img} 
-                alt="usersrating"
-                width={160}
-                height={160}            
-            />
-            <h1 className='text-white text-center text-2xl'>
-                {title}
-            </h1>
-            <p className='text-white text-center'>
+        <div className="text-white text-center md:text-left mb-28">
+            <div className="hidden md:block">
+                <Image 
+                    src={img} 
+                    alt="usersrating"
+                    width={160}
+                    height={160}            
+                />
+                <h1 className='text-2xl'>
+                    {title}
+                </h1>
+            </div>
+            <div className="md:hidden">
+                <Image 
+                    src={img} 
+                    alt="usersrating"
+                    width={160}
+                    height={160}            
+                />
+            </div>
+            <p>
                 {content}
             </p>
         </div>

@@ -14,10 +14,10 @@ const AccordionCards = ({ accordionCards }: AccordionCardProps) => {
     return (
         <Accordion className='unlimited-card accordioncards mb-10 @responsive text-base md:text-lg lg:text-xl xl:text-2xl'>
             <AccordionSummary expandIcon={<ExpandMoreIcon className='text-white'/>}>
-                <Typography className='flex justify-center items-center text-white text-4xl w-[1200px] h-[100px]'>{title}</Typography>
+                <Typography className='flex justify-center items-center text-white text-4xl w-[1200px] h-[100px] text-center mobile-large'>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography className='text-white'>{content}</Typography>
+                <Typography className='text-white mobile-small'>{content}</Typography>
                 <img src={img} alt="card" />
                 <div className="flex justify-center mb-10 mt-10">
                     <CustomButton
