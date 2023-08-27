@@ -20,7 +20,7 @@ export interface UserProps {
     id:string,
     img:string,
     title:string,
-    content:string
+    content:string,
 }
 
 export interface AccordionProps {

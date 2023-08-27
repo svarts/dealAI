@@ -96,6 +96,23 @@ body {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid #ffffff08;
 }
+.start-container {
+  position: relative;
+  text-align: center;
+}
+.background-image {
+  width: 100%; 
+  height: auto; 
+  z-index: 0;
+}
+.centered-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
 .text-shadow:hover{
   text-shadow: #fff1b8 1px 0 10px;
 }
@@ -103,6 +120,9 @@ body {
   background: -webkit-linear-gradient(#00eeff, #5d58ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.bg-gradient{
+  background-color: #3D3D3D;
 }
 .feedback-slider {
   display: flex;
@@ -113,6 +133,15 @@ body {
 .feedback-card {
   scroll-snap-align: start;
   flex-shrink: 0;
+}
+.user-ratings {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  justify-content: center;
+  gap: 50px; 
+  padding: 20px;
 }
 .unlimited-card:hover{
   box-shadow: #d8d8d84d 0px 7px 30px 0px;
@@ -128,11 +157,6 @@ body {
   border: 0.01px solid #5e5e5e6f !important;
   background-color: rgb(12, 12, 12) !important;
   border-radius: 2.5rem !important;
-}
-.user-ratings-container {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
 }
 .unlimited-accounts-container {
   background: transparent;

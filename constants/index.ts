@@ -64,28 +64,29 @@ export const feedback = [
 export const userRatings = [
     {
         id: "rating01",
-        img: "./userrating.svg",
-        title: "Instantly User Ratings"
+        img: "./userrating01.svg",
+        title: "Instantly User Ratings",
+        content: ""
     },
     {
         id: "rating02",
-        img: "./userrating.svg",
+        img: "./userrating02.svg",
         title: "Ease of Use",
         content: "Email Marketing Average: 8.7"
     },
     {
         id: "rating03",
-        img: "./userrating.svg",
+        img: "./userrating03.svg",
         title: "Quality of support",
         content: "Email Marketing Average: 8.5"
     },
     {
         id: "rating04",
-        img: "./userrating.svg",
+        img: "./userrating04.svg",
         title: "Ease of setup",
         content: "Email Marketing Average: 8.4"
-    },
-]
+    }
+];
 export const accordionCards = [
     {
         id: "card01",

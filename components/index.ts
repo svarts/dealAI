@@ -7,6 +7,7 @@ import FeedbackCards from './FeedbackCards';
 import UserRatings from './UserRatings';
 import AccordionCard from './AccordionCards';
 import CampaignAnalytics from './CampaignAnalytics';
+import GetStarted from './GetStarted';
 
 export{
     Hero,
@@ -17,5 +18,6 @@ export{
     FeedbackCards,
     UserRatings,
     AccordionCard,
-    CampaignAnalytics
+    CampaignAnalytics,
+    GetStarted
 }
