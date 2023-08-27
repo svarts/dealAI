@@ -107,7 +107,15 @@ body {
 }
 .centered-text {
   position: absolute;
-  top: 10%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
+.centered-button {
+  position: absolute;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;

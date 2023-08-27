@@ -9,9 +9,9 @@ const Navbar = () => {
     return (
         <nav className='w-full flex py-6 justify-between items-center bg-black'>
             <img src="./logo.svg" alt='meetingmaximizer-ai'
-                className='w-[70px] ml-10 cursor-pointer' />
+                className='w-[70px] cursor-pointer sm:ml-10 ml-0' />
             <h1 className={`font-poppins font-normal cursor-pointer text-[16px] text-white text-xl`}>eal<span className='text-cyan-500'>AI</span></h1>
-            <ul className='list-none sm:flex hidden justify-center items-center flex-1'>
+            <ul className='list-none sm:flex hidden justify-center items-center flex-1 ml-52'>
                 {navLinks.map((nav, index) => (
                     <li key={nav.id} 
                         className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white hover:text-secondary`}>
@@ -23,8 +23,8 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <div className='mr-10 text-white text-shadow text-xl'>
-                <a href="">Log in</a>
+            <div className='mr-5 ml-32 text-white text-shadow text-2xl'>
+                <a href="" className='text-base md:text-2xl md:mr-5'>Log in</a>
             </div>
             <div className="sm:hidden flex flex-1 justify-end items-center mr-2">
                 <img 
@@ -49,11 +49,10 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <button className="hidden sm:block w-[128px] h-[60px] font-extrabold uppercase text-black bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 rounded-3xl text-center mr-10">
+            <button className="hidden sm:block w-[150px] h-[60px] font-extrabold uppercase text-black bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 rounded-3xl text-center text-xl font-black mr-10">
                 Get Started
             </button>
         </nav>
-        
     )
 }
 

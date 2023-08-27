@@ -13,7 +13,32 @@ const StartNow = () => {
             </h2>
             <CustomButton
                 title="Start Now"
-                containerStyles="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-2xl uppercase text-white text-lg bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 rounded-3xl text-center"
+                containerStyles="centered-button uppercase text-white text-lg bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 rounded-3xl text-center"
+            />
+            <Image 
+                src="./folder.svg"
+                alt="icon"
+                width={60}
+                height={60}
+                className=""
+            />
+            <Image 
+                src="./lock.svg"
+                alt="icon"
+                width={60}
+                height={60}
+            />
+            <Image 
+                src="./mail.svg"
+                alt="icon"
+                width={60}
+                height={60}
+            />
+            <Image 
+                src="./send.svg"
+                alt="icon"
+                width={60}
+                height={60}
             />
         </div>
     )
