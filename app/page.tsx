@@ -1,5 +1,6 @@
 import { CampaignAnalytics, FeedbackCards, Hero, HeroParallax, UserRatings } from "@/components"
 import AccordionCards from "@/components/AccordionCards"
+import EmailAccelerator from "@/components/EmailAccelerator"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
 import { feedback, userRatings, accordionCards } from "@/constants"
 
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
         <div>
           <CampaignAnalytics />
+          <EmailAccelerator />
         </div>
       </div>
     </main>

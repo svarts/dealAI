@@ -127,6 +127,7 @@ body {
 .accordioncards {
   border: 0.01px solid #5e5e5e6f !important;
   background-color: rgb(12, 12, 12) !important;
+  border-radius: 2.5rem !important;
 }
 .user-ratings-container {
   display: flex;
