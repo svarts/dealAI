@@ -15,9 +15,10 @@ const UserRatings = ({ userratings }: UserRatingProps) => {
                     src={img} 
                     alt="usersrating"
                     width={160}
-                    height={160}            
+                    height={160}
+                    className="mb-5"            
                 />
-                <h1 className='text-2xl'>
+                <h1 className='text-2xl text-left'>
                     {title}
                 </h1>
             </div>

@@ -2,6 +2,7 @@ import { CampaignAnalytics, CustomButton, FeedbackCards, Hero, HeroParallax, Use
 import AccordionCards from "@/components/AccordionCards"
 import EmailAccelerator from "@/components/EmailAccelerator"
 import GetStarted from "@/components/GetStarted"
+import RecruitersSlider from "@/components/Recruiters"
 import Recruiters from "@/components/Recruiters"
 import StartNow from "@/components/StartNow"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
