@@ -8,7 +8,7 @@ interface RecruitersCardProps {
 const Recruiters = ({ recruiters }: RecruitersCardProps) => {
     const { name, img, title, content } = recruiters;
     return (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="">
             <div className='px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 mb-10 accordioncards'>
                 <p className="font-poppins font-normal text-[18px] leading-[32px] text-white my-10">{content}</p>
                 <div className="flex flex-row items-center mb-5">
