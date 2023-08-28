@@ -169,22 +169,8 @@ body {
   background-color: rgb(12, 12, 12) !important;
   border-radius: 2.5rem !important;
 }
-.unlimited-accounts-container {
-  background: transparent;
-  box-shadow: rgba(135, 135, 255, 0.25) 0px 30px 60px -12px inset, rgba(50, 25, 98, 0.3) 0px 18px 36px -18px inset;
-  border: 0.6px solid #5d58ff;
-}
-.unlimited-accounts-container:hover {
-  box-shadow: rgba(128, 128, 255, 0.52) 0px 30px 60px -12px inset, rgba(62, 43, 97, 0.6)0px 18px 36px -18px inset;
-  border: 0.6px solid #5e58ff7d;
-}
-.pink-gradient {
-  background: linear-gradient(90deg, #e0c4f4 0%, #5d58ff 100%);
-  filter: blur(900px);
-}
-.blue-gradient {
-  background: #7EC9FF;
-  filter: blur(750px);
+.accordion-font{
+  font-size: 48px;
 }
 .purple-gradient{
   background: #262559;

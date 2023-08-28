@@ -8,7 +8,7 @@ const CampaignAnalytics = () => {
                 <h1 className="text-gradient text-center text-6xl">
                     Optimize with <br /> Campaign Analytics
                 </h1>
-                <p className="text-white text-center md:text-left">
+                <p className="text-white text-center text-2xl">
                     See exactly what’s working with our advanced analytics dashboard. <br /> Pause the campaigns that need work and <br /> scale the ones that are performing well.
                 </p>
                 <div className="flex justify-center mb-10 mt-10">

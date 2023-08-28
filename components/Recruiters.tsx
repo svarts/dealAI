@@ -1,5 +1,6 @@
 "use client";
 import { RecruitersProps } from '@/types';
+import CustomButton from './CustomButton';
 
 interface RecruitersCardProps {
     recruiters: RecruitersProps;
@@ -8,7 +9,7 @@ interface RecruitersCardProps {
 const Recruiters = ({ recruiters }: RecruitersCardProps) => {
     const { name, img, title, content } = recruiters;
     return (
-        <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0'>
+        <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 accordioncards'>
             <p className="font-poppins font-normal text-[18px] leading-[32px] text-white my-10">{content}</p>
             <div className="flex flex-row">
                 <img src={img} alt="recruiters" className="w-[100px] h-[100px] rounded-full " />

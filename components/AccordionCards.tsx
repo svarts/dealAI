@@ -13,12 +13,16 @@ const AccordionCards = ({ accordionCards }: AccordionCardProps) => {
     return (
         <Accordion className='unlimited-card accordioncards mb-10 @responsive text-base md:text-lg lg:text-xl xl:text-2xl'>
             <AccordionSummary expandIcon={<ExpandMoreIcon className='text-white text-5xl'/>}>
-                <Typography className='flex justify-center items-center text-white text-4xl w-[1200px] h-[100px] text-center mobile-small'>{title}</Typography>
+                <Typography className='flex justify-center items-center text-white text-4xl w-[1200px] h-[100px] text-center mobile-small accordion-font'>{title}</Typography>
             </AccordionSummary>
-            <AccordionDetails>
-                <Typography className='text-white mobile-small'>{content}</Typography>
-                <img src={img} alt="card" />
-                <div className="flex justify-center mb-10 mt-10">
+            <AccordionDetails className="flex flex-wrap">
+                <div className="w-full md:w-1/2 pr-4">
+                    <Typography className='text-gray-300 font-thin text-center text-2xl mobile-small'>{content}</Typography>
+                </div>
+                <div className="w-full md:w-1/2 pl-4">
+                    <img src={img} alt="card" className="w-[450px] h-auto" />
+                </div>
+                <div className="w-full flex justify-center mb-10 mt-10">
                     <CustomButton
                         title="Start For Free"
                         containerStyles="uppercase text-white text-lg bg-gradient-to-r from-cyan-300 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 rounded-3xl text-center"

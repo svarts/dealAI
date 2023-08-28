@@ -12,10 +12,10 @@ const EmailAccelerator = () => {
             />
             <div className="md:mr-10">
                 <h1 className="text-gradient text-center text-6xl">
-                    Optimize with <br /> Campaign Analytics
+                    Eliminate Guesswork with <br /> Instantly Cold Email Accelerator
                 </h1>
-                <p className="text-white text-center md:text-left">
-                    See exactly what’s working with our advanced analytics dashboard. <br /> Pause the campaigns that need work and <br /> scale the ones that are performing well.
+                <p className="text-white text-center text-2xl">
+                    Get access to 50+ docs and SOPs, 600+ cold email templates, <br /> all our set-up guides and step-by-step instructions on exactly how we set up campaigns <br /> + our Cold Email Vault which includes 200+ <br /> Cold Email strategies and Tools we’re using.
                 </p>
                 <div className="flex justify-center mb-10 mt-10">
                     <CustomButton
