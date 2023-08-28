@@ -2,9 +2,10 @@ import { CampaignAnalytics, FeedbackCards, Hero, HeroParallax, UserRatings } fro
 import AccordionCards from "@/components/AccordionCards"
 import EmailAccelerator from "@/components/EmailAccelerator"
 import GetStarted from "@/components/GetStarted"
+import Recruiters from "@/components/Recruiters"
 import StartNow from "@/components/StartNow"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
-import { feedback, userRatings, accordionCards } from "@/constants"
+import { feedback, userRatings, accordionCards, recruiters} from "@/constants"
 
 
 export default function Home() {
@@ -39,7 +40,16 @@ export default function Home() {
         </div>
         <div>
           <GetStarted />
+        </div>
+        <div>
+          {recruiters.map((item) => (
+            <Recruiters key={item.id} recruiters={item} />
+          ))}
+        </div>
+        <div>
           <StartNow />
+        </div>
+        <div>
         </div>
       </div>
     </main>
