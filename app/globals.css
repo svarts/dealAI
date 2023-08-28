@@ -96,6 +96,9 @@ body {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid #ffffff08;
 }
+.border{
+  border: 1px solid #53535359;
+}
 .start-container {
   position: relative;
   text-align: center;
