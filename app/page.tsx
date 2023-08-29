@@ -2,11 +2,9 @@ import { CampaignAnalytics, CustomButton, FeedbackCards, Hero, HeroParallax, Use
 import AccordionCards from "@/components/AccordionCards"
 import EmailAccelerator from "@/components/EmailAccelerator"
 import GetStarted from "@/components/GetStarted"
-import RecruitersSlider from "@/components/Recruiters"
-import Recruiters from "@/components/Recruiters"
 import StartNow from "@/components/StartNow"
 import UnlimitedAccounts from "@/components/UnlimitedAccounts"
-import { feedback, userRatings, accordionCards, recruiters} from "@/constants"
+import { feedback, userRatings, accordionCards } from "@/constants"
 
 
 export default function Home() {
@@ -42,15 +40,6 @@ export default function Home() {
         <div>
           <GetStarted />
         </div>
-        {/* <div>
-          {recruiters.map((item) => (
-            <Recruiters key={item.id} recruiters={item} />
-          ))}
-          <CustomButton
-            title="Start For Free"
-            containerStyles="uppercase text-white text-lg bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 rounded-3xl text-center transition ease-in duration-700 ..."
-          />
-        </div> */}
         <div>
           <StartNow />
         </div>
