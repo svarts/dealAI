@@ -3,7 +3,7 @@ import CustomButton from './CustomButton'
 
 const GetStarted = () => {
     return (
-        <div className='w-full h-[400px] md:h-[200px] text-white text-lg bg-gradient-to-r from-neutral-700 via-neutral-900 to-neutral-950 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-700 dark:focus:ring-neutral-950 shadow-lg shadow-neutral-900/50 dark:shadow-lg dark:shadow-neutral-950/80 rounded-3xl text-center border mb-10'>
+        <div className='w-full h-[400px] lg:h-[200px] text-white text-lg bg-gradient-to-r from-neutral-700 via-neutral-900 to-neutral-950 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-700 dark:focus:ring-neutral-950 shadow-lg shadow-neutral-900/50 dark:shadow-lg dark:shadow-neutral-950/80 rounded-3xl text-center border mb-10'>
             <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
                 <div className="md:mr-8">
                     <h1 className='text-white uppercase text-left font-black text-2xl md:text-3xl mt-10 ml-5'>

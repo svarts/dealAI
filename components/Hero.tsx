@@ -1,7 +1,6 @@
 "use client"
 
 const Hero = () => {
-  const handleScroll = () => { }
   return (
     <div className='flex justify-center items-center text-center mb-40'>
       <div className='flex-1 pt-10 md:pt-36 text-center md:text-center md:items-start'>

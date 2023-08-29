@@ -71,14 +71,6 @@ body {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.nav{
-  background: rgba(28, 28, 28, 0.488);
-  border-radius: 1px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid #ffffff08;
-}
 .border{
   border: 1px solid #53535359;
 }
@@ -202,8 +194,8 @@ body {
     font-size: 24px !important; 
   }
   .card-mobile {
-    width: 100px;
-    height: 100px;
+    width: 105px;
+    height: 105px;
   }
   .button-mobile {
     width: 120px;
@@ -221,6 +213,30 @@ body {
   .cards-mobile-margin {
     margin-top: 140px;
   }
+  .flex-container{
+    flex-direction: column;
+  }
 }
-
-
+/* iPad Mini and larger */
+@media (min-width: 768px) and (max-width: 1024px){
+  .nav-title{
+    margin-left: 500px;
+  }
+  .logo {
+    margin-left: 20px; 
+  }
+  .card-mobile {
+    width: 200px;
+    height: 200px;
+    margin-top: 140px;
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+  .content-mobile {
+    visibility: hidden;
+  }
+  .gradient{
+    left: 5%;
+  }
+}

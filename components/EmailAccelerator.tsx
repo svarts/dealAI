@@ -3,7 +3,7 @@ import CustomButton from './CustomButton';
 
 const EmailAccelerator = () => {
     return (
-        <div className="flex items-center flex-col md:flex-row">
+        <div className="flex items-center flex-row flex-container">
             <Image
                 src="./accelator.svg"
                 alt="card"

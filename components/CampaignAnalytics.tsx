@@ -3,8 +3,8 @@ import CustomButton from './CustomButton';
 
 const CampaignAnalytics = () => {
     return (
-        <div className="flex items-center flex-col md:flex-row">
-            <div className="md:mr-10">
+        <div className="flex items-center flex-row flex-container">
+            <div className="lg:mr-10">
                 <h1 className="text-gradient text-center text-5xl md:text-8xl">
                     Optimize with <br /> Campaign Analytics
                 </h1>
