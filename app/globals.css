@@ -155,6 +155,15 @@ body {
 .accordion-font{
   font-size: 32px !important;
 }
+.accordion-text{
+  font-size: 24px !important;
+}
+.accordion-icon{
+  font-size: 48px !important;
+}
+.margin-right{
+  margin-right: 10px;
+}
 .purple-gradient{
   background: #262559;
   filter: blur(800px);

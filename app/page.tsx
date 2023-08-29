@@ -42,7 +42,7 @@ export default function Home() {
         <div>
           <GetStarted />
         </div>
-        <div>
+        {/* <div>
           {recruiters.map((item) => (
             <Recruiters key={item.id} recruiters={item} />
           ))}
@@ -50,7 +50,7 @@ export default function Home() {
             title="Start For Free"
             containerStyles="uppercase text-white text-lg bg-gradient-to-r from-indigo-300 via-indigo-500 to-indigo-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 shadow-lg shadow-indigo-500/50 dark:shadow-lg dark:shadow-indigo-800/80 rounded-3xl text-center transition ease-in duration-700 ..."
           />
-        </div>
+        </div> */}
         <div>
           <StartNow />
         </div>

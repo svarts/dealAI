@@ -12,12 +12,12 @@ const AccordionCards = ({ accordionCards }: AccordionCardProps) => {
     const { img, title, content } = accordionCards;
     return (
         <Accordion className='unlimited-card accordioncards mb-10 @responsive text-base md:text-lg lg:text-xl xl:text-2xl'>
-            <AccordionSummary expandIcon={<ExpandMoreIcon className='text-white text-5xl'/>}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon className='text-white accordion-icon accordion-icon-mobile'/>}>
                 <Typography className='flex justify-center items-center text-white text-4xl w-[1200px] h-[100px] text-center mobile-small accordion-font'>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails className="flex flex-wrap">
                 <div className="w-full md:w-1/2 pr-4">
-                    <Typography className='text-gray-300 font-thin text-center text-2xl mobile-small'>{content}</Typography>
+                    <Typography className='text-gray-300 font-thin text-center accordion-text mobile-small'>{content}</Typography>
                 </div>
                 <div className="w-full md:w-1/2 pl-4">
                     <img src={img} alt="card" className="w-[450px] h-auto" />
