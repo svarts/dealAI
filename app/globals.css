@@ -153,7 +153,7 @@ body {
   border-radius: 2.5rem !important;
 }
 .accordion-font{
-  font-size: 48px;
+  font-size: 32px !important;
 }
 .purple-gradient{
   background: #262559;
