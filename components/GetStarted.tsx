@@ -9,7 +9,7 @@ const GetStarted = () => {
                     <h1 className='text-white uppercase text-left font-black text-2xl md:text-3xl mt-10 ml-5'>
                         Learn From The Best in Our Private Community
                     </h1>
-                    <p className='text-gray-400 text-left font-light text-lg md:text-xl mt-6 md:mt-10 ml-5'>
+                    <p className='text-gray-400 text-left font-light text-lg md:text-xl mt-6 md:mt-10 ml-5 mb-5'>
                         Get access to our Private Facebook Community where you can learn from other similar entrepreneurs. See what’s working and not working for them. Ask questions and get answers from our experts.
                     </p>
                 </div>
