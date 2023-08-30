@@ -23,6 +23,7 @@ const CampaignAnalytics = () => {
                 alt="card"
                 width={650}
                 height={800}
+                className="campaign-cards"
             />
         </div>
     )

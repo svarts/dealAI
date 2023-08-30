@@ -9,6 +9,7 @@ const EmailAccelerator = () => {
                 alt="card"
                 width={650}
                 height={800}
+                className="campaign-cards"
             />
             <div className="md:mr-10">
                 <h1 className="text-gradient text-center text-5xl md:text-8xl">
