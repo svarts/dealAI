@@ -5,10 +5,10 @@ const CampaignAnalytics = () => {
     return (
         <div className="flex items-center flex-row flex-container">
             <div className="lg:mr-10">
-                <h1 className="text-gradient text-center text-5xl md:text-8xl">
+                <h1 className="text-gradient text-center text-5xl md:text-6xl">
                     Optimize with <br /> Campaign Analytics
                 </h1>
-                <p className="text-white text-center text-base md:text-2xl font-light">
+                <p className="text-gray-200 text-center text-base md:text-2xl font-light">
                     See exactly what’s working with our advanced analytics dashboard. <br /> Pause the campaigns that need work and <br /> scale the ones that are performing well.
                 </p>
                 <div className="flex justify-center mb-10 mt-10">

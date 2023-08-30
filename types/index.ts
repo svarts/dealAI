@@ -29,3 +29,12 @@ export interface AccordionProps {
     title:string,
     content:string
 }
+
+export interface RecruitersProps {
+    [x: string]: any;
+    id:string,
+    name: string,
+    img:string,
+    title:string,
+    content:string
+}

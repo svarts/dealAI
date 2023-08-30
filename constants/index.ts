@@ -107,6 +107,71 @@ export const accordionCards = [
         img: "./group03.svg",
     },
 ];
+export const recruiters = [
+    {
+        id: "recruiters-1",
+        content: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+        name: "Herman Jensen",
+        title: "Founder & Leader",
+        img: "/person06.jpeg",
+    },
+    {
+        id: "recruiters-2",
+        content: "Money makes your life easier. If you're lucky to have it, you're lucky.",
+        name: "Steve Mark",
+        title: "Founder & Leader",
+        img: "/person07.jpeg",
+    },
+    {
+        id: "recruiters-3",
+        content: "It is usually people in the money business, finance, and international trade that are really rich.",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person08.jpeg",
+    },
+    {
+        id: "recruiters-4",
+        content: "Since 2018, I've mastered cold email marketing and found DealAI to be my ultimate favorite tool.",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person09.jpeg",
+    },
+    {
+        id: "recruiters-5",
+        content: "DealAI is the exact email outreach solution that I always wish existed. ",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person10.jpeg",
+    },
+    {
+        id: "recruiters-5",
+        content: "DealAI is the exact email outreach solution that I always wish existed. ",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person05.jpeg",
+    },
+    {
+        id: "recruiters-5",
+        content: "DealAI is the exact email outreach solution that I always wish existed. ",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person04.jpeg",
+    },
+    {
+        id: "recruiters-5",
+        content: "DealAI is the exact email outreach solution that I always wish existed. ",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person03.jpeg",
+    },
+    {
+        id: "recruiters-5",
+        content: "DealAI is the exact email outreach solution that I always wish existed. ",
+        name: "Kenn Gallagher",
+        title: "Founder & Leader",
+        img: "/person01.avif",
+    },
+];
 export const footerLinks = [
     {
         title: "Quick links",
