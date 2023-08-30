@@ -8,7 +8,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
         <nav className='w-full flex py-6 justify-between items-center bg-black'>
-            <img src="./logo.svg" alt='meetingmaximizer-ai' className='w-[70px] cursor-pointer logo' />
+            <img src="./logo.svg" alt='meetingmaximizer-ai' className='w-[70px] cursor-pointer logo'/>
             <h1 className={`font-poppins font-normal cursor-pointer text-[16px] text-white text-xl`}>eal<span className='text-cyan-500'>AI</span></h1>
             <ul className='list-none justify-center items-center flex-1 ml-52 lg:flex hidden'>
                 {navLinks.map((nav, index) => (
