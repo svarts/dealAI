@@ -112,9 +112,6 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.bg-gradient{
-  background-color: #3D3D3D;
-}
 .feedback-slider {
   display: flex;
   overflow-x: auto;
@@ -130,7 +127,15 @@ body {
   flex-wrap: wrap;
   justify-content: space-between; 
 }
-.user-ratings {
+.recruiters-blur{
+  width: 1300px;
+  height: 150px;
+  background-color: #000000;
+  filter: blur(30px);
+  margin-top: -200px;
+  margin-bottom: 150px;
+}
+.user-ratings{
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -245,10 +250,10 @@ body {
   .nav-title{
     margin-left: 500px;
   }
-  .logo {
+  .logo{
     margin-left: 20px; 
   }
-  .card-mobile {
+  .card-mobile{
     width: 200px;
     height: 200px;
     margin-top: 140px;
@@ -256,10 +261,18 @@ body {
   .flex-container{
     flex-direction: column;
   }
-  .content-mobile {
+  .content-mobile{
     visibility: hidden;
   }
   .gradient{
     left: 5%;
+  }
+  .recruiters{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .recruiters-blur{
+    margin-top: -180px;
   }
 }

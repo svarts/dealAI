@@ -144,32 +144,11 @@ export const recruiters = [
         img: "/person10.jpeg",
     },
     {
-        id: "recruiters-5",
+        id: "recruiters-6",
         content: "DealAI is the exact email outreach solution that I always wish existed. ",
         name: "Kenn Gallagher",
         title: "Founder & Leader",
         img: "/person05.jpeg",
-    },
-    {
-        id: "recruiters-5",
-        content: "DealAI is the exact email outreach solution that I always wish existed. ",
-        name: "Kenn Gallagher",
-        title: "Founder & Leader",
-        img: "/person04.jpeg",
-    },
-    {
-        id: "recruiters-5",
-        content: "DealAI is the exact email outreach solution that I always wish existed. ",
-        name: "Kenn Gallagher",
-        title: "Founder & Leader",
-        img: "/person03.jpeg",
-    },
-    {
-        id: "recruiters-5",
-        content: "DealAI is the exact email outreach solution that I always wish existed. ",
-        name: "Kenn Gallagher",
-        title: "Founder & Leader",
-        img: "/person01.avif",
     },
 ];
 export const footerLinks = [
