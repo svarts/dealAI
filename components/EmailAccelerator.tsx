@@ -1,7 +1,29 @@
-import Image from "next/image"
+"use client"
+import Image from "next/image";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap"; 
 import CustomButton from './CustomButton';
 
-const EmailAccelerator = () => {
+const CampaignAnalytics = () => {
+    const elementRef = useRef<HTMLImageElement | null>(null);
+    useEffect(() => {
+        const element = elementRef.current;
+        const handleScroll = () => {
+            if (element) { 
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight / 2) {
+                    gsap.to(element, { duration: 3, x: 20, opacity: 1 });
+                } else {
+                    gsap.to(element, { duration: 3, x: -20, opacity: 0 });
+                }
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className="flex items-center flex-row flex-container">
             <Image
@@ -9,7 +31,8 @@ const EmailAccelerator = () => {
                 alt="card"
                 width={650}
                 height={800}
-                className="campaign-cards"
+                className="element"
+                ref={elementRef}
             />
             <div className="md:mr-10">
                 <h1 className="text-gradient text-center text-5xl md:text-6xl">
@@ -29,4 +52,4 @@ const EmailAccelerator = () => {
     )
 }
 
-export default EmailAccelerator
+export default CampaignAnalytics;

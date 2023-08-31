@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, useRef } from "react";
 
 export interface CustomButtonProps {
     title: string;
@@ -38,3 +38,4 @@ export interface RecruitersProps {
     title:string,
     content:string
 }
+

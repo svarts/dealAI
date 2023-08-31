@@ -1,17 +1,40 @@
-import Image from "next/image"
-import CustomButton from "./CustomButton"
+"use client"
+import Image from "next/image";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import CustomButton from './CustomButton';
 
 const StartNow = () => {
+    const elementRef = useRef<HTMLImageElement | null>(null);
+    useEffect(() => {
+        const element = elementRef.current;
+        const handleScroll = () => {
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight / 2) {
+                    gsap.to(element, { duration: 3, x: 20, opacity: 1 });
+                } else {
+                    gsap.to(element, { duration: 3, x: -20, opacity: 0 });
+                }
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className="start-container relative mt-10">
             <img src="./background.svg" alt="background" className="background-image unlimited-card background-mobile" />
-            <div className="image-row absolute top-0 left-0 w-full h-full flex justify-center items-center">
+            <div className="element image-row absolute top-0 left-0 w-full h-full flex justify-center items-center" ref={elementRef}>
                 <Image
                     src="./group01.svg"
                     alt="icon"
                     width={360}
                     height={360}
-                    className="mt-96 md:mb-0 md:mr-4 md:inline-block card-mobile card-mobile-margin"
+                    className="element mt-96 md:mb-0 md:mr-4 md:inline-block card-mobile card-mobile-margin"
+                    ref={elementRef}
                 />
                 <Image
                     src="./group02.svg"

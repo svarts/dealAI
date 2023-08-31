@@ -1,7 +1,30 @@
+"use client"
 import Image from "next/image"
-import CustomButton from './CustomButton';
+import CustomButton from './CustomButton'
+import { gsap } from "gsap";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const CampaignAnalytics = () => {
+    const elementRef = useRef<HTMLImageElement | null>(null);
+    useEffect(() => {
+        const element = elementRef.current;
+        const handleScroll = () => {
+            if (element) { 
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight / 2) {
+                    gsap.to(element, { duration: 3, x: -20, opacity: 1 });
+                } else {
+                    gsap.to(element, { duration: 3, x: 20, opacity: 0 });
+                }
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className="flex items-center flex-row flex-container">
             <div className="lg:mr-10">
@@ -23,10 +46,13 @@ const CampaignAnalytics = () => {
                 alt="card"
                 width={650}
                 height={800}
-                className="campaign-cards"
+                className="element"
+                ref={elementRef}
             />
         </div>
     )
 }
 
-export default CampaignAnalytics
+export default CampaignAnalytics;
+
+

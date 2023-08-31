@@ -176,9 +176,6 @@ body {
   filter: blur(800px);
   z-index: 0;
 }
-.campaign-cards {
-  animation: fadeOut 10s ease-in-out;
-}
 .gradient {
   --size: 600px;
   --speed: 20s;
