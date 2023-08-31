@@ -1,10 +1,30 @@
 "use client"
-
-import Image from "next/image"
-import { Parallax, ParallaxProvider } from "react-scroll-parallax"
-import CustomButton from "./CustomButton"
+import { useRef, useEffect } from "react";
+import Image from "next/image";
+import { gsap } from "gsap"; 
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import CustomButton from "./CustomButton";
 
 const UnlimitedAccounts = () => {
+    const elementRef = useRef<HTMLImageElement | null>(null);
+    useEffect(() => {
+        const element = elementRef.current;
+        const handleScroll = () => {
+            if (element) { 
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight / 2) {
+                    gsap.to(element, { duration: 3, x: 20, opacity: 1 });
+                } else {
+                    gsap.to(element, { duration: 3, x: -20, opacity: 0 });
+                }
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <ParallaxProvider>
             <Parallax speed={-20}>
@@ -14,7 +34,8 @@ const UnlimitedAccounts = () => {
                         alt="unlimited"
                         width={1400}
                         height={1000}
-                        className="mt-28 unlimited-card"
+                        className="element mt-28 unlimited-card"
+                        ref={elementRef}
                     />
                 </div>
                 <div className="flex-1 pt-10 md:pt-36 text-center md:text-center md:items-start">
