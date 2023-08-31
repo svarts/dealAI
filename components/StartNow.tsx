@@ -13,9 +13,9 @@ const StartNow = () => {
                 const rect = element.getBoundingClientRect();
                 const windowHeight = window.innerHeight || document.documentElement.clientHeight;
                 if (rect.top <= windowHeight / 2) {
-                    gsap.to(element, { duration: 3, x: 20, opacity: 1 });
+                    gsap.to(element, { duration: 3, x: 10, opacity: 1 });
                 } else {
-                    gsap.to(element, { duration: 3, x: -20, opacity: 0 });
+                    gsap.to(element, { duration: 3, x: -10, opacity: 0 });
                 }
             }
         };
@@ -33,7 +33,7 @@ const StartNow = () => {
                     alt="icon"
                     width={360}
                     height={360}
-                    className="element mt-96 md:mb-0 md:mr-4 md:inline-block card-mobile card-mobile-margin"
+                    className="element mt-96 mr-5 md:mb-0 md:mr-4 md:inline-block card-mobile card-mobile-margin"
                     ref={elementRef}
                 />
                 <Image
@@ -41,7 +41,7 @@ const StartNow = () => {
                     alt="icon"
                     width={360}
                     height={360}
-                    className="mt-48 md:mb-0 md:mx-4 md:inline-block card-mobile cards-mobile-margin"
+                    className="mt-48 mr-2 md:mb-0 md:mx-4 md:inline-block card-mobile cards-mobile-margin"
                 />
                 <Image
                     src="./group03.svg"
